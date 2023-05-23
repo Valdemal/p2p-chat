@@ -3,7 +3,7 @@ import importlib.util
 import subprocess
 import os
 
-reqModules = ['socket', 'threading', 'curses', 'npyscreen', 'time', 'datetime', 'pyperclip'] # Array with required modules
+reqModules = ['socket', 'threading', 'curses', 'npyscreen', 'time', 'datetime', 'pyperclip', 'pathlib'] # Array with required modules
 missingModules = [] # Array to fill with missing modules
 
 if sys.version_info < (3, 3): # Check the python version
@@ -44,7 +44,7 @@ if missingModules:
         i = input("Press Enter to Exit >>")
         exit(1)
 else:
-    import chat # Import the Chat App from chat.py
+    from src import chat # Import the Chat App from chat.py
     chatApp = chat.ChatApp().run() # Run the Chat App
 
 

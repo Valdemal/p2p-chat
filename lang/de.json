@@ -1,4 +1,11 @@
 {
+    "interface": {
+        "title": "Peer-2-Peer Chat",
+        "feed": "Füttern",
+        "system": "SYSTEM",
+        "input": "Eingang",
+        "footer": "Enter -> Senden"
+    },
     "commands": {
         "connect": "/connect [host] [port] | Mit einem Peer verbinden",
         "disconnect": "/disconnect | Vom aktuellen Peer trennen",
