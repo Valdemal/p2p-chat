@@ -20,6 +20,7 @@
         "help": "/help | Zeigt diese Hilfe",
         "lang": "/lang [language] | Aendert sprache zu angegebenem Laendercode"
     },
+    "nicknameInfo": "Ihr Spitzname ist {0}. Verwenden Sie /nickname, um es zu ändern.",
     "noInternetAccess": "Anscheinend hast du gerade kein Internet.",
     "failedFetchPublicIP": "Konnte deine oeffentliche IP nicht finden.",
     "restarting": "Starte Sockets neu...",

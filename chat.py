@@ -34,7 +34,7 @@ class ChatApp(npyscreen.NPSAppManaged):
 
         # Define initial variables
         self.port = 3333  # Port the server runs on
-        self.nickname = ""  # Empty variable to be filled with users nickname
+        self.nickname = os.getlogin()
         self.peer = ""  # Peer nickname
         self.peer_ip = "0"  # IP of peer
         self.peer_port = "0"  # Port of peer
@@ -43,6 +43,8 @@ class ChatApp(npyscreen.NPSAppManaged):
         self.history_pos = 0  # Int for current position in message history
 
         self.start_threads()
+
+        self.system_message(LANG['nicknameInfo'].format(self.nickname))
 
         # Dictionary for commands. Includes function to call and number of needed arguments
         self.commands = {

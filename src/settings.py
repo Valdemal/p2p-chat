@@ -1,9 +1,9 @@
 import json
 from pathlib import Path
-from typing import Literal
+from typing import Literal, Dict
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-LANG = None  # Inits later
+LANG = {}  # Inits later
 
 
 def change_settings(key: str, value):

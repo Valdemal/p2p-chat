@@ -20,6 +20,7 @@
         "help": "/help | Shows this help",
         "lang": "/lang [language] | Changes language to specified two digit country code"
     },
+    "nicknameInfo": "Your nickname is {0}. Use /nickname to change it.",
     "noInternetAccess": "It seems like you do not have internet access.",
     "failedFetchPublicIP": "Could not get public IP.",
     "restarting": "Restarting sockets...",
