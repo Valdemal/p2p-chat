@@ -12,7 +12,6 @@ from src.client import Client
 from src.server import Server
 from src.form import ChatForm
 from src.settings import LANG, change_lang, change_settings
-from src.utils import get_public_ip
 
 
 # noinspection PyAttributeOutsideInit
@@ -26,7 +25,7 @@ class ChatApp(npyscreen.NPSAppManaged):
 
         # Get these PCs public IP and catch errors
         try:
-            self.hostname = get_public_ip()
+            self.hostname = socket.gethostbyname(socket.gethostname())
         except socket.error:
             self.system_message(LANG['noInternetAccess'])
             self.system_message(LANG['failedFetchPublicIP'])
